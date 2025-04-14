@@ -24,6 +24,6 @@ Bu Django asosidagi INSTAGRAM veb-ilovasi bo'lib, foydalanuvchi hikoyalari, post
 ### 1-qadam: Repozitoriyani klonlash
 
 ```bash
-git clone https://github.com/username/repo-nomi.git
+git clone https://github.com/asilbek3450/instagram_2312.git
 cd repo-nomi
 
