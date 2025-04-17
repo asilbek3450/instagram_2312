@@ -43,5 +43,10 @@ pip install djangorestframework
 pip install djangorestframework-simplejwt
 pip install drf-yasg
 pip install Pillow
+```
 
+YOKI 
 
+```
+pip install -r requirements.txt
+```
