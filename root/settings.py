@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-t9nlc11raw-m*^c@%4y!&o%0zs)+=ct%!3zcc##-dp7s3)1cnn'
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -56,7 +57,7 @@ REST_FRAMEWORK = {
     ),
 }
 
-# JWT Token sozlamalari
+# JWT Token sozlamalari - Json Web Token
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
