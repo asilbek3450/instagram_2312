@@ -1,6 +1,6 @@
 # users/views.py
 from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.response import Response
 from .serializers import RegisterSerializer, LoginSerializer, ProfileSerializer, UpdateProfileSerializer
@@ -27,7 +27,7 @@ class LoginView(generics.GenericAPIView):
 
 
 class ProfileView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     serializer_class = ProfileSerializer
 
     def get_object(self):

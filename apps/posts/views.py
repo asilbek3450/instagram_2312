@@ -89,7 +89,7 @@ class CommentReplyViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
-    @action(detail=True, methods=['post'])
+    @action(detail=True, methods=['post'])  # dekorator to add like functionality
     def like(self, request, pk=None):
         comment_reply = self.get_object()
         user = request.user
